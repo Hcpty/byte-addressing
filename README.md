@@ -1,7 +1,7 @@
-# Translation Lookaside Buffer
-A note about Translation Lookaside Buffer.
+# Readme
+A note about Page Table.
 
-### Translation Lookaside Buffer
+### Page Table
 
 ### Credits
 - Computer Systems: A Programmer's Persepctive, Third Edition
