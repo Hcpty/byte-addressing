@@ -13,7 +13,7 @@ A note about Page Table.
 
 字节的物理地址 = 页的物理地址 + 该字节在该页中的偏移字节数
 
-借助页表和这个计算公式，Memory Management Unit可以完成从 (页的序号, 字节的偏移量) 到字节的物理地址的转换。
+借助页表和字节的物理地址的计算公式，Memory Management Unit可以完成从 (页的序号, 字节的偏移量) 到字节的物理地址的转换。
 
 ### Credits
 - Computer Systems: A Programmer's Perspective, Third Edition
