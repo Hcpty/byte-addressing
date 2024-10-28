@@ -1,5 +1,5 @@
 # Readme
-A note about Page Table.
+A note about Page Table, Page Number and Byte Offset.
 
 ### 从页的序号到页的物理地址的映射
 
