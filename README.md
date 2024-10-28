@@ -27,7 +27,7 @@ A note about Page Table.
 根据页的m级序号从m级页表中查询到该页的物理地址。
 ```
 
-这种做法增加了查询次数，但是好处是每级页表的尺寸都可以很小，从而减少了初次建立页表的开销，另外，只有已缓存的页才需要下级页表，所以在某些情况下可以节省主存空间。
+这种做法增加了查询次数，但是好处是每级页表的尺寸都可以很小，从而减少了初次建立页表的开销。
 
 ### Credits
 - Computer Systems: A Programmer's Perspective, Third Edition
