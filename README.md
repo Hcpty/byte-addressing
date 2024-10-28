@@ -15,5 +15,20 @@ A note about Page Table.
 
 借助页表和字节的物理地址的计算公式，Memory Management Unit可以完成从 (页的序号, 字节的偏移量) 到字节的物理地址的转换。
 
+### 有层次的序号
+
+页的序号可以是有层次的，形如abcde...m，其中a代表1级序号，b代表2级序号，以此类推。
+
+```
+根据页的1级序号从1级页表中查询到的不是该页的物理地址，而是2级页表的物理地址。
+根据页的2级序号从2级页表中查询到的也不是该页的物理地址，而是3级页表的物理地址。
+根据页的3级序号从3级页表中查询到的也不是该页的物理地址，而是4级页表的物理地址。
+……
+根据页的m级序号从m级页表中查询到该页的物理地址。
+```
+
+这种做法增加了查询次数，但是好处是每级页表的尺寸都可以很小，从而减少了初次建立页表的开销，另外，只有已缓存的页才需要下级页表，所以在某些情况下可以节省主存空间。
+
 ### Credits
 - Computer Systems: A Programmer's Perspective, Third Edition
+- [Multilevel Paging in Operating System - GeeksforGeeks](https://www.geeksforgeeks.org/multilevel-paging-in-operating-system/)
