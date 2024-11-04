@@ -29,7 +29,7 @@ A note about Page Tables, Page Number and Byte Offset.
 根据页的m级序号从m级页表中查询到该页的物理地址；
 ```
 
-这种做法的坏处是增加了查询次数，好处是每级页表的尺寸都可以很小，从而减少了初次建立页表的开销，并由于无需为未缓存的页建立下级页表，所以在有些情况下可以节省主存空间。
+这种做法的坏处是增加了查询次数，好处是每级页表的尺寸都可以很小，从而减少了初次建立页表的开销，并且由于无需为未缓存的页建立下级页表，所以在有些情况下可以节省主存空间。
 
 ### Credits
 - Computer Systems: A Programmer's Perspective, Third Edition
