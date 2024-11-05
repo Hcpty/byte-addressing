@@ -1,7 +1,7 @@
 # Readme
 A note about Page Tables, Page Number and Byte Offset.
 
-每一个进程都对应一张页表。
+一个进程对应一张页表。
 
 ### 从页的序号到页的物理地址的映射
 
