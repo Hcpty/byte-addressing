@@ -33,4 +33,3 @@ A note about Page Tables, Page Number and Byte Offset.
 
 ### Credits
 - Computer Systems: A Programmer's Perspective, Third Edition
-- [Multilevel Paging in Operating System - GeeksforGeeks](https://www.geeksforgeeks.org/multilevel-paging-in-operating-system/)
