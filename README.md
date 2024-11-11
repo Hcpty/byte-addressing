@@ -7,13 +7,13 @@ A note about Byte Addressing.
 
 ### 字节的物理地址的计算公式
 
-一个页中通常包含2<sup>p</sup>个字节，每一个字节都有一个逻辑地址，字节的逻辑地址的数据结构中包含两个字段：
+一个页中通常包含2<sup>p</sup>个字节，每一个字节都有一个逻辑地址。字节的逻辑地址的数据结构中包含两个字段：
 - 该字节所在的页的页号，可以根据页的序号从页表中查询对应的页的物理地址。
 - 该字节在该页中的偏移字节数。
 
 字节的物理地址 = 该字节所在的页的物理地址 + 该字节在该页中的偏移字节数
 
-借助该计算公式，MMU (Memory Management Unit) 可以执行从字节逻辑地址到字节物理地址的翻译。
+借助该计算公式，MMU (Memory Management Unit) 可以执行从逻辑地址到物理地址的翻译。
 
 ### 有层次的序号
 
@@ -26,8 +26,6 @@ A note about Byte Addressing.
 ……
 根据页的m级序号从m级页表中查询到该页的物理地址；
 ```
-
-这种做法的坏处是增加了查询次数，好处是每级页表的尺寸都可以很小，从而减少了初次建立页表的开销，并且由于无需为未缓存的页建立下级页表，所以在有些情况下可以节省主存空间。
 
 ### Credits
 - Computer Systems: A Programmer's Perspective, Third Edition - Randal E. Bryant and David R. O'Hallaron
